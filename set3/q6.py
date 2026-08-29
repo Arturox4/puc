@@ -1,5 +1,6 @@
 fuerza_base = int(input())
 dist_min = int(input())
+
 distancia = 1
 sumas = []
 n = 1
@@ -19,4 +20,7 @@ while True:
         break
     n += 1
 
-print(sumas)
+print("1 = 1")
+
+for item in sumas:
+    print()
