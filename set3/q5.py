@@ -19,8 +19,6 @@ for i in range(rango + 1):
             total = sum(divisores)
             
             
-
-
         if total >= 16:
             estrellas.append(lower)
             q_lista.append(total)
