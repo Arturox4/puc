@@ -4,7 +4,7 @@ dist_min = int(input())
 distancia = 1
 sumas = []
 n = 1
-
+sumas.append(int(1))
 
 while True:
     if n % 2 == 0:
@@ -16,11 +16,19 @@ while True:
     
 
     sumas.append(actual)
+
     if sum(sumas) >= dist_min:
         break
     n += 1
 
-print("1 = 1")
+
+acumulado = 0
+operaciones = []
+
 
 for item in sumas:
-    print()
+    acumulado += item
+    operaciones.append(str(item))
+    print(" + ".join(operaciones), "=", acumulado)
+
+print(f"Necesite {len(sumas)} golpes para alcanzar los {dist_min} metros")
