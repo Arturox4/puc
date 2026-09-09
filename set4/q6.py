@@ -16,8 +16,6 @@ def en_posicion(numero, indice, reversa):
     return obj
 
 
-
-
 def reemplazar(numero, indice, nuevo, reversa):
 
     digitos = list(str(numero))
@@ -30,6 +28,8 @@ def reemplazar(numero, indice, nuevo, reversa):
     digitos[posicion] = str(nuevo)
 
     return int("".join(digitos)) 
+
+
 
 
 
